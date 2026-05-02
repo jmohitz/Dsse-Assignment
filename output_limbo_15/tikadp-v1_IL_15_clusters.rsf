@@ -36,7 +36,6 @@ contain 1 org.apache.tika.sax.ContentHandlerFactory
 contain 1 org.apache.tika.sax.TaggedContentHandler
 contain 1 org.apache.tika.sax.TeeContentHandler
 contain 1 org.apache.tika.sax.WriteLimiter
-contain 1 org.apache.tika.utils.CharsetUtils
 contain 1 org.apache.tika.utils.ExceptionUtils
 contain 1 org.apache.tika.utils.FileProcessResult
 contain 1 org.apache.tika.utils.ProcessUtils

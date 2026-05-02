@@ -25,8 +25,7 @@ depends org.apache.tika.detect.AutoDetectReader org.apache.tika.detect.EncodingR
 depends org.apache.tika.detect.AutoDetectReader org.apache.tika.detect.CharsetSupersets
 depends org.apache.tika.detect.AutoDetectReader org.apache.tika.metadata.TikaCoreProperties
 depends org.apache.tika.detect.AutoDetectReader org.apache.tika.metadata.Property
-depends org.apache.tika.detect.AutoDetectReader org.apache.tika.mime.MediaType
-depends org.apache.tika.detect.AutoDetectReader org.apache.tika.utils.CharsetUtils
+depends org.apache.tika.detect.AutoDetectReader org.apache.tika.detect.MetadataCharsetDetector
 depends org.apache.tika.detect.AutoDetectReader org.apache.tika.exception.TikaException
 depends org.apache.tika.detect.BOMDetector org.apache.tika.io.TikaInputStream
 depends org.apache.tika.detect.BOMDetector org.apache.tika.detect.EncodingResult
@@ -50,11 +49,11 @@ depends org.apache.tika.detect.CompositeEncodingDetector org.apache.tika.io.Tika
 depends org.apache.tika.detect.CompositeEncodingDetector org.apache.tika.metadata.Metadata
 depends org.apache.tika.detect.CompositeEncodingDetector org.apache.tika.parser.ParseContext
 depends org.apache.tika.detect.CompositeEncodingDetector org.apache.tika.detect.EncodingResult
+depends org.apache.tika.detect.CompositeEncodingDetector org.apache.tika.detect.EncodingResult$ResultType
 depends org.apache.tika.detect.CompositeEncodingDetector org.apache.tika.metadata.TikaCoreProperties
 depends org.apache.tika.detect.CompositeEncodingDetector org.apache.tika.metadata.Property
 depends org.apache.tika.detect.CompositeEncodingDetector org.apache.tika.detect.EncodingDetectorContext
 depends org.apache.tika.detect.CompositeEncodingDetector org.apache.tika.detect.EncodingDetectorContext$Result
-depends org.apache.tika.detect.CompositeEncodingDetector org.apache.tika.detect.EncodingResult$ResultType
 depends org.apache.tika.detect.DefaultDetector org.apache.tika.mime.MimeTypes
 depends org.apache.tika.detect.DefaultDetector org.apache.tika.mime.MediaTypeRegistry
 depends org.apache.tika.detect.DefaultDetector org.apache.tika.config.ServiceLoader
@@ -73,7 +72,6 @@ depends org.apache.tika.detect.DefaultDetector org.apache.tika.config.TikaCompon
 depends org.apache.tika.detect.DefaultEncodingDetector org.apache.tika.config.ServiceLoader
 depends org.apache.tika.detect.DefaultEncodingDetector org.apache.tika.detect.EncodingDetector
 depends org.apache.tika.detect.DefaultEncodingDetector org.apache.tika.detect.CompositeEncodingDetector
-depends org.apache.tika.detect.DefaultEncodingDetector org.apache.tika.detect.MetaEncodingDetector
 depends org.apache.tika.detect.DefaultProbDetector org.apache.tika.mime.ProbabilisticMimeDetectionSelector
 depends org.apache.tika.detect.DefaultProbDetector org.apache.tika.mime.MediaTypeRegistry
 depends org.apache.tika.detect.DefaultProbDetector org.apache.tika.config.ServiceLoader
