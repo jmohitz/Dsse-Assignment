@@ -1,0 +1,21 @@
+# Apache Tika source clone (827 MB — available at https://github.com/apache/tika)
+arcade_tika/tika/
+
+# Compiled jars
+*.jar
+
+# Python virtualenv
+arcade_tika/.venv/
+
+# Intermediate clustering output directories
+arcade_tika/output_wca/
+arcade_tika/output_wca_4/
+arcade_tika/output_wca_9/
+arcade_tika/output_wca_15/
+arcade_tika/output_limbo/
+arcade_tika/output_limbo_4/
+arcade_tika/output_limbo_9/
+arcade_tika/output_limbo_15/
+
+# macOS
+.DS_Store
