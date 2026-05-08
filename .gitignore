@@ -5,8 +5,6 @@
 arcade_tika/
 arcade_tools/
 
-# Compiled jars
-*.jar
 
 # macOS
 .DS_Store
