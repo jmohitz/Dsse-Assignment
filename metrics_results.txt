@@ -1,0 +1,21 @@
+Calculating metrics a2a and cvg
+Comparing:  WCA 9 vs Limbo 9
+A2A comparison: 86.9969040247678
+CVG comparison: Coverage from output_wca_9/tikadp-v1_UEMNM_9_clusters.rsf to output_limbo_9/tikadp-v1_IL_9_clusters.rsf is 0.0
+Coverage from output_limbo_9/tikadp-v1_IL_9_clusters.rsf to output_wca_9/tikadp-v1_UEMNM_9_clusters.rsf is 0.0
+Comparing:  WCA 4 vs Limbo 4
+A2A comparison: 92.61006289308176
+CVG comparison: Coverage from output_wca_4/tikadp-v1_UEMNM_4_clusters.rsf to output_limbo_4/tikadp-v1_IL_4_clusters.rsf is 0.25
+Coverage from output_limbo_4/tikadp-v1_IL_4_clusters.rsf to output_wca_4/tikadp-v1_UEMNM_4_clusters.rsf is 0.25
+Comparing:  WCA 15 vs Limbo 15
+A2A comparison: 81.15501519756839
+CVG comparison: Coverage from output_wca_15/tikadp-v1_UEMNM_15_clusters.rsf to output_limbo_15/tikadp-v1_IL_15_clusters.rsf is 0.0
+Coverage from output_limbo_15/tikadp-v1_IL_15_clusters.rsf to output_wca_15/tikadp-v1_UEMNM_15_clusters.rsf is 0.0
+Comparing:  WCA 4 vs ACDC
+A2A comparison: 92.13836477987421
+CVG comparison: Coverage from output_wca_4/tikadp-v1_UEMNM_4_clusters.rsf to acdc/tika_detect_parser_acdc.rsf is 0.25
+Coverage from acdc/tika_detect_parser_acdc.rsf to output_wca_4/tikadp-v1_UEMNM_4_clusters.rsf is 0.25
+Comparing:  Limbo 4 vs ACDC
+A2A comparison: 88.83647798742138
+CVG comparison: Coverage from output_limbo_4/tikadp-v1_IL_4_clusters.rsf to acdc/tika_detect_parser_acdc.rsf is 0.25
+Coverage from acdc/tika_detect_parser_acdc.rsf to output_limbo_4/tikadp-v1_IL_4_clusters.rsf is 0.25

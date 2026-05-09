@@ -1,3 +1,5 @@
+Week 1
+
 Step 1 - Clone the apache tika repository
 	
 	git clone https://github.com/apache/tika.git
@@ -25,3 +27,11 @@ Step 6 - Analyze the clusters created by each algorithm and find the results
 		
 	Run the analyze_cluster.py file and parse the results stored in cluster_results.txt
 
+Week 2
+
+Step 1 - Run the arcade tools a2a and cvg to calculate the relevant metrics (similarity and distance)
+	
+	Run the metrics.py file which calculates the a2a and cvg scores betweeen WCA(k=4,9,15) and Limbo(k=4,9,15), between WCA(k=4) and ACDC, between Limbo(k=4) and ACDC
+	The results are then stored in metrics_results.txt
+
+Step 2 - LLM Prompting (lightweight model)
