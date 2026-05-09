@@ -1,0 +1,62 @@
+DSSE Assignment 1 Week 1 update
+Group 6 - Working on apache tika detect and parser
+
+Compiled the tika repository into a .jar file which was analyzed using arcade JavaParser to create the .rsf file.
+This .rsf contained all the class dependencies for the tika repository, so we then used filtering.py to filter out the dependencies related to detect and parser only.
+After the filtered .rsf was generated, used clustering algorithms (WCA, Limbo and ACDC) with the clustering.py to detect the structural clusters present in the architecture.
+WCA and Limbo were run with k=4,9,15 to compare various results. We used UEMNM for WCA and the non-matching algorithm gives a similarity score of 0 providing more accurate results
+Once the clustering was completed, we analyzed the clusters using analyze_cluster.py. The results were stored in cluster_results.txt.
+
+Final results: 
+WCA k=4 
+  Clusters: 4
+  Total classes: 157
+  Cluster sizes: min=1, median=1, max=154
+  Size distribution: [154, 1, 1, 1]
+
+WCA k=9
+  Clusters: 9
+  Total classes: 157
+  Cluster sizes: min=1, median=1, max=149
+  Size distribution: [149, 1, 1, 1, 1, 1, 1, 1, 1]
+
+WCA k=15
+  Clusters: 15
+  Total classes: 157
+  Cluster sizes: min=1, median=1, max=143
+  Size distribution: [143, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+LIMBO k=4
+  Clusters: 4
+  Total classes: 157
+  Cluster sizes: min=5, median=7, max=113
+  Size distribution: [113, 32, 7, 5]
+
+LIMBO k=9
+  Clusters: 9
+  Total classes: 157
+  Cluster sizes: min=2, median=9, max=81
+  Size distribution: [81, 32, 12, 11, 9, 4, 3, 3, 2]
+
+LIMBO k=15
+  Clusters: 15
+  Total classes: 157
+  Cluster sizes: min=2, median=6, max=38
+  Size distribution: [38, 32, 24, 11, 9, 6, 6, 6, 6, 4, 4, 3, 3, 3, 2]
+
+ACDC
+  Clusters: 4
+  Total classes: 157
+  Cluster sizes: min=2, median=13, max=108
+  Size distribution: [108, 34, 13, 2]
+
+Github link:
+https://github.com/jmohitz/Dsse-Assignment-1
+
+
+Contribution:
+	Tanmay Mhatre - 3 hours
+	Mohit Jain - 3 hours
+	Arya Kulklarni - 3 hours
+	Mauli Chiragkumar Bhavsar - 3 hours
+	Aniruddh Vyas - 3 hours

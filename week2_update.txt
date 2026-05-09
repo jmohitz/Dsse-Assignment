@@ -1,0 +1,42 @@
+DSSE Assignment 1 Week 2 update
+Group 6 - Working on apache tika detect and parser
+
+Evaluated the clustering algorithms from Week 1 using ARCADE's a2a and cvg metrics. 
+Wrote metrics.py to automate ARCADE metric calculations. Evaluated WCA, Limbo, and ACDC at k=4.
+We also set up our assigned lightweight LLM (Qwen/Qwen2.5-7B-Instruct) in Google Collab and performed hyperparameter tuning and prompt engineering to finetune results.
+Configured Collab notebook Group6_DS4SE26Week2.ipynb with Hugging Face token.Changes the role-based prompts for Java code analysis. 
+Conducted 6 test runs adjusting temperature, top_p, do_sample, and prompts.
+
+Cluster Evaluation:
+A2A Scores - Very high across all pairs (WCA/Limbo: 92.6%, WCA/ACDC: 92.1%).
+CVG Scores - Extremely low across all pairs (0.25).
+Conclusion: 
+	The high A2A scores are a mathematical illusion caused by all three algorithms agreeing on one massive core component. 
+	However, the CVG reveals complete disagreement on granular components. 
+	Limbo and ACDC distribute the remaining classes logically, while WCA collapses due to the snowball effect.
+
+LLM Hyperparameter & Prompt Tuning:
+	Token Limit - 512 tokens was insufficient and caused cut-offs; increased to 1024.
+	Logic/Math Hallucinations - Standard zero-shot prompting caused the LLM to hallucinate loop iterations (guessing 3 digits instead of 4).
+	Greedy Decoding -  Setting do_sample=False (Greedy Decoding) fixed the math but resulted in a robotic tone unsuitable for architectural summaries.
+Conclusion: 
+	We maintained a slight creativity threshold (temp=0.3, top_p=0.8) but applied Chain of Thought prompting by explicitly instructing the LLM to trace variables in each loop iteration. 
+	This forced the model to show its work, resulting in more accurate logic with a natural tone.
+
+CURRENT OPTIMIZED LLM CONFIGURATION
+	Model - Qwen/Qwen2.5-7B-Instruct
+	max_new_tokens - 1024
+	temperature - 0.3
+	top_p - 0.8
+	do_sample - True
+	Prompt Strategy - Role Prompting, Chain of Thought
+
+Github link:
+https://github.com/jmohitz/Dsse-Assignment-1
+
+Contribution:
+	Tanmay Mhatre - 1 hour
+	Mohit Jain - 4 hours
+	Arya Kulklarni - 1 hour
+	Mauli Chiragkumar Bhavsar - 1 hour
+	Aniruddh Vyas - 6 hours
