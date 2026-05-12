@@ -3,11 +3,8 @@ import subprocess, os, shutil
 arcade_tools = "arcade_tools"
 rsf = "filtered_rsf.rsf"
 
-# Automatically generate WCA runs for k = 1 through 50
-wca_runs = [("WCA", "UEMNM", k) for k in range(1, 51)]
-
-# Automatically generate LIMBO runs for k = 1 through 50
-limbo_runs = [("LIMBO", "IL", k) for k in range(1, 51)]
+wca_runs = [("WCA", "UEMNM", k) for k in range(2, 51)]
+limbo_runs = [("LIMBO", "IL", k) for k in range(2, 51)]
 
 for algo, measure, k in wca_runs:
     out = f"output_{algo.lower()}_{k}"

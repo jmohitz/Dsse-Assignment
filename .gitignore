@@ -1,11 +1,7 @@
-# IDE settings
 .vscode/
-
-# Arcade Tika repository and all its contents
 arcade_tika/
 arcade_tools/
 output_*/
+cluster_results/
 acdc/
-
-# macOS
 .DS_Stores
