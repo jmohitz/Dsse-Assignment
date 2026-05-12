@@ -4,7 +4,8 @@
 # Arcade Tika repository and all its contents
 arcade_tika/
 arcade_tools/
-
+output_*/
+acdc/
 
 # macOS
-.DS_Store
+.DS_Stores

@@ -35,3 +35,11 @@ Step 1 - Run the arcade tools a2a and cvg to calculate the relevant metrics (sim
 	The results are then stored in metrics_results.txt
 
 Step 2 - LLM Prompting (lightweight model)
+
+	Use the google collab sheet - https://colab.research.google.com/drive/1kefRfgNJNmbpsQKID02KcVyM293I4m3M?usp=sharing
+	To load in the LLM model, perform quantization to reduce the model size and precision, the tokenizer configuration is set up for communicating with the LLM.
+	We can finetune the prompt as well as the hyperparameters for the model (temp, top_p, max_tokens and do_sample) to determine what works best
+
+Step 3 - LLM Prompting (heavyweight model)
+
+	

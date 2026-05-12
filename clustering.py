@@ -1,57 +1,27 @@
 import subprocess, os, shutil
- 
+
 arcade_tools = "arcade_tools"
 rsf = "filtered_rsf.rsf"
- 
 
-wca_runs_1 = [
-    ("WCA", "UEMNM", 10),
-    ("WCA", "UEMNM", 20),
-    ("WCA", "UEMNM", 60),
-    
-]
+# Automatically generate WCA runs for k = 1 through 50
+wca_runs = [("WCA", "UEMNM", k) for k in range(1, 51)]
 
-wca_runs_2 = [
-    ("WCA", "UEMNM", 4),
-    ("WCA", "UEMNM", 9),
-    ("WCA", "UEMNM", 15),
-    
-]
-limbo_runs = [
-    ("LIMBO", "IL", 4),
-    ("LIMBO", "IL", 9),
-    ("LIMBO", "IL", 15),
-]
+# Automatically generate LIMBO runs for k = 1 through 50
+limbo_runs = [("LIMBO", "IL", k) for k in range(1, 51)]
 
-for algo, measure, k in wca_runs_1:
+for algo, measure, k in wca_runs:
     out = f"output_{algo.lower()}_{k}"
     if os.path.exists(out):
         shutil.rmtree(out)
     os.makedirs(out)
-    print(f"Clustering for {algo}, k={k}, measure = {measure} with stopping criterion as ARCHSIZEFRACTION")
+    print(f"Clustering for {algo}, k={k}, measure = {measure} with stopping criterion as PRESELECTED.")
     subprocess.run([
         "java", "-Xmx4096m", "-jar", f"{arcade_tools}/arcade_core_clusterer.jar",
         f"algo={algo}", "language=java", f"deps={rsf}",
         f"measure={measure}", "projname=tikadp", "projversion=v1",
         f"projpath={out}", "stop=ARCHSIZEFRACTION", f"stopthreshold={k}", "serial=ARCHSIZE", f"serialthreshold={k}"
     ], check=True)
-    print(f"Clustering completed. Output store in : {out}/")
-
-
-for algo, measure, k in wca_runs_2:
-    out = f"output_{algo.lower()}_{k}"
-    if os.path.exists(out):
-        shutil.rmtree(out)
-    os.makedirs(out)
-    print(f"Clustering for {algo}, k={k}, measure = {measure} with stopping criterion as PRESELECTED. File level = false")
-    subprocess.run([
-        "java", "-Xmx4096m", "-jar", f"{arcade_tools}/arcade_core_clusterer.jar",
-        f"algo={algo}", "language=java", f"deps={rsf}",
-        f"measure={measure}", "projname=tikadp", "projversion=v1",
-        f"projpath={out}", "stop=ARCHSIZEFRACTION", f"stopthreshold={k}", "serial=ARCHSIZE", f"serialthreshold={k}",
-        "filelevel=false", "packageprefix=org.apache.tika"
-    ], check=True)
-    print(f"Clustering completed. Output store in : {out}/")
+    print(f"Clustering completed. Output stored in : {out}/")
 
 
 for algo, measure, k in limbo_runs:
@@ -66,7 +36,7 @@ for algo, measure, k in limbo_runs:
         f"measure={measure}", "projname=tikadp", "projversion=v1",
         f"projpath={out}", "stop=PRESELECTED", f"stopthreshold={k}", "serial=ARCHSIZE", f"serialthreshold={k}"
     ], check=True)
-    print(f"Clustering completed. Output store in : {out}/")
+    print(f"Clustering completed. Output stored in : {out}/")
 
 
 # ACDC (separate jar, different syntax)
@@ -79,6 +49,6 @@ subprocess.run([
     "java", "-jar", f"{arcade_tools}/arcade_core-ACDC.jar",
     rsf, acdc_out
 ], check=True)
-print(f" Clustering completed. Output store in : {acdc_out}/")
+print(f"Clustering completed. Output stored in : {acdc_out}")
 
 print("All Clustering Algorithms completed")

@@ -32,11 +32,11 @@ CURRENT OPTIMIZED LLM CONFIGURATION
 	Prompt Strategy - Role Prompting, Chain of Thought
 
 Github link:
-https://github.com/jmohitz/Dsse-Assignment-1
+https://github.com/jmohitz/Dsse-Assignment
 
 Contribution:
 	Tanmay Mhatre - 1 hour
 	Mohit Jain - 4 hours
-	Arya Kulklarni - 1 hour
-	Mauli Chiragkumar Bhavsar - 1 hour
+	Arya Kulklarni - 3 hours
+	Mauli Chiragkumar Bhavsar - 3 hours
 	Aniruddh Vyas - 6 hours
