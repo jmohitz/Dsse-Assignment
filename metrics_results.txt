@@ -19,3 +19,133 @@ Comparing:  Limbo 4 vs ACDC
 A2A comparison: 88.83647798742138
 CVG comparison: Coverage from output_limbo_4/tikadp-v1_IL_4_clusters.rsf to acdc/tika_detect_parser_acdc.rsf is 0.25
 Coverage from acdc/tika_detect_parser_acdc.rsf to output_limbo_4/tikadp-v1_IL_4_clusters.rsf is 0.25
+
+============================================================
+Week 3 ARC Metrics  |  Week 3 ARC alpha=0.4 k=12 (codebert)
+Timestamp: 2026-05-16 22:50:47
+RSF: /Users/mohit/Documents/DSSE-Week-1/.claude/worktrees/cranky-curie-374972/output_arc_0.4_12/tikadp-v1_ARC_12_clusters.rsf
+============================================================
+  vs WCA k=4               A2A=89.62848297213623  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs Limbo k=4             A2A=85.13931888544892  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs ACDC                  A2A=86.9969040247678  CVG(ARC→base)=0.08333333333333333  CVG(base→ARC)=0.25    
+
+
+============================================================
+Week 3 ARC Metrics  |  Week 3 ARC alpha=0.4 k=12 (codebert, complete linkage)
+Timestamp: 2026-05-16 23:03:57
+RSF: /Users/mohit/Documents/DSSE-Week-1/.claude/worktrees/cranky-curie-374972/output_arc_0.4_12/tikadp-v1_ARC_12_clusters.rsf
+============================================================
+  vs WCA k=4               A2A=79.87616099071208  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs Limbo k=4             A2A=80.4953560371517  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs ACDC                  A2A=80.59006211180125  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+
+
+============================================================
+Week 3 ARC Metrics  |  alpha=0.0 k=12
+Timestamp: 2026-05-16 23:17:42
+RSF: /Users/mohit/Documents/DSSE-Week-1/.claude/worktrees/cranky-curie-374972/output_arc_0.0_12/tikadp-v1_ARC_12_clusters.rsf
+============================================================
+  vs WCA k=4               A2A=81.57894736842105  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs Limbo k=4             A2A=81.11455108359134  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs ACDC                  A2A=81.67701863354037  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+
+
+============================================================
+Week 3 ARC Metrics  |  alpha=0.2 k=12
+Timestamp: 2026-05-16 23:17:42
+RSF: /Users/mohit/Documents/DSSE-Week-1/.claude/worktrees/cranky-curie-374972/output_arc_0.2_12/tikadp-v1_ARC_12_clusters.rsf
+============================================================
+  vs WCA k=4               A2A=79.87616099071208  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs Limbo k=4             A2A=80.4953560371517  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs ACDC                  A2A=80.59006211180125  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+
+
+============================================================
+Week 3 ARC Metrics  |  alpha=0.4 k=12
+Timestamp: 2026-05-16 23:17:43
+RSF: /Users/mohit/Documents/DSSE-Week-1/.claude/worktrees/cranky-curie-374972/output_arc_0.4_12/tikadp-v1_ARC_12_clusters.rsf
+============================================================
+  vs WCA k=4               A2A=79.87616099071208  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs Limbo k=4             A2A=80.4953560371517  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs ACDC                  A2A=80.59006211180125  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+
+
+============================================================
+Week 3 ARC Metrics  |  alpha=0.6 k=12
+Timestamp: 2026-05-16 23:17:43
+RSF: /Users/mohit/Documents/DSSE-Week-1/.claude/worktrees/cranky-curie-374972/output_arc_0.6_12/tikadp-v1_ARC_12_clusters.rsf
+============================================================
+  vs WCA k=4               A2A=79.87616099071208  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs Limbo k=4             A2A=80.4953560371517  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs ACDC                  A2A=80.59006211180125  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+
+
+============================================================
+Week 3 ARC Metrics  |  alpha=0.8 k=12
+Timestamp: 2026-05-16 23:17:43
+RSF: /Users/mohit/Documents/DSSE-Week-1/.claude/worktrees/cranky-curie-374972/output_arc_0.8_12/tikadp-v1_ARC_12_clusters.rsf
+============================================================
+  vs WCA k=4               A2A=79.87616099071208  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs Limbo k=4             A2A=80.4953560371517  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs ACDC                  A2A=80.59006211180125  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+
+
+============================================================
+Week 3 ARC Metrics  |  alpha=1.0 k=12
+Timestamp: 2026-05-16 23:17:44
+RSF: /Users/mohit/Documents/DSSE-Week-1/.claude/worktrees/cranky-curie-374972/output_arc_1.0_12/tikadp-v1_ARC_12_clusters.rsf
+============================================================
+  vs WCA k=4               A2A=97.05882352941177  CVG(ARC→base)=0.3333333333333333  CVG(base→ARC)=1.0     
+  vs Limbo k=4             A2A=90.40247678018576  CVG(ARC→base)=0.08333333333333333  CVG(base→ARC)=0.25    
+  vs ACDC                  A2A=90.21739130434783  CVG(ARC→base)=0.08333333333333333  CVG(base→ARC)=0.25    
+
+
+============================================================
+Week 3 ARC Metrics  |  alpha=0.4 k=4
+Timestamp: 2026-05-16 23:17:44
+RSF: /Users/mohit/Documents/DSSE-Week-1/.claude/worktrees/cranky-curie-374972/output_arc_0.4_4/tikadp-v1_ARC_4_clusters.rsf
+============================================================
+  vs WCA k=4               A2A=86.36363636363636  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs Limbo k=4             A2A=86.20689655172413  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs ACDC                  A2A=85.84905660377359  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+
+
+============================================================
+Week 3 ARC Metrics  |  alpha=0.4 k=8
+Timestamp: 2026-05-16 23:17:44
+RSF: /Users/mohit/Documents/DSSE-Week-1/.claude/worktrees/cranky-curie-374972/output_arc_0.4_8/tikadp-v1_ARC_8_clusters.rsf
+============================================================
+  vs WCA k=4               A2A=84.26791277258567  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs Limbo k=4             A2A=84.73520249221184  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs ACDC                  A2A=83.90625  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+
+
+============================================================
+Week 3 ARC Metrics  |  alpha=0.4 k=12
+Timestamp: 2026-05-16 23:17:45
+RSF: /Users/mohit/Documents/DSSE-Week-1/.claude/worktrees/cranky-curie-374972/output_arc_0.4_12/tikadp-v1_ARC_12_clusters.rsf
+============================================================
+  vs WCA k=4               A2A=79.87616099071208  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs Limbo k=4             A2A=80.4953560371517  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs ACDC                  A2A=80.59006211180125  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+
+
+============================================================
+Week 3 ARC Metrics  |  alpha=0.4 k=16
+Timestamp: 2026-05-16 23:17:45
+RSF: /Users/mohit/Documents/DSSE-Week-1/.claude/worktrees/cranky-curie-374972/output_arc_0.4_16/tikadp-v1_ARC_16_clusters.rsf
+============================================================
+  vs WCA k=4               A2A=79.38461538461539  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs Limbo k=4             A2A=80.0      CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs ACDC                  A2A=80.0925925925926  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+
+
+============================================================
+Week 3 ARC Metrics  |  alpha=0.4 k=20
+Timestamp: 2026-05-16 23:17:45
+RSF: /Users/mohit/Documents/DSSE-Week-1/.claude/worktrees/cranky-curie-374972/output_arc_0.4_20/tikadp-v1_ARC_20_clusters.rsf
+============================================================
+  vs WCA k=4               A2A=78.89908256880733  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs Limbo k=4             A2A=78.89908256880733  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+  vs ACDC                  A2A=78.37423312883436  CVG(ARC→base)=0.0       CVG(base→ARC)=0.0     
+
