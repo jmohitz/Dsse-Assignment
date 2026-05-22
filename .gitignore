@@ -6,3 +6,4 @@ cluster_results/
 acdc/
 .DS_Stores
 .embedding_cache/
+output_arc.zip

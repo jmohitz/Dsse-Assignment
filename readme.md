@@ -43,3 +43,23 @@ Step 2 - LLM Prompting (lightweight model)
 Step 3 - LLM Prompting (heavyweight model)
 
 	
+
+Week 3
+
+Step 1 - Running semantic clustering
+
+	Use the google collab sheet - https://colab.research.google.com/drive/1wlyR-CUhVUHHYLvohTfZ4zj2j6Nw6QF6?usp=sharing
+	First upload the "tika_data.zip" folder to colan
+	We use quantization to reduce memory requirements, then load in the embeddings model
+	The source code is analysed using this model, and the script runs to create the different required matrices
+	Once the script has finished running, the created cluster files will be downloaded to your system.
+	Unzip the output_arc folder and copy it to the same directory as this repository
+
+Step 2 - Calculating metrics to compare the semantic and structural clustering methods
+
+	Run the python script metrics_week3.py to calculate the a2a and cvg scores between the 4 algorithms for various k-values and alpha-values
+	The results are stored in metrics_week3_summary.csv file
+	Analyze the results to determine the best parameters for getting good clusters
+
+
+Week 4 - LLM based architecture tasks

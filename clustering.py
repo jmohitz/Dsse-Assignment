@@ -16,7 +16,7 @@ for algo, measure, k in wca_runs:
         "java", "-Xmx4096m", "-jar", f"{arcade_tools}/arcade_core_clusterer.jar",
         f"algo={algo}", "language=java", f"deps={rsf}",
         f"measure={measure}", "projname=tikadp", "projversion=v1",
-        f"projpath={out}", "stop=ARCHSIZEFRACTION", f"stopthreshold={k}", "serial=ARCHSIZE", f"serialthreshold={k}"
+        f"projpath={out}", "stop=PRESELECTED", f"stopthreshold={k}", "serial=ARCHSIZE", f"serialthreshold={k}"
     ], check=True)
     print(f"Clustering completed. Output stored in : {out}/")
 
