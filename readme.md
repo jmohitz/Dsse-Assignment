@@ -49,7 +49,7 @@ Week 3
 Step 1 - Running semantic clustering
 
 	Use the google collab sheet - https://colab.research.google.com/drive/1wlyR-CUhVUHHYLvohTfZ4zj2j6Nw6QF6?usp=sharing
-	First upload the "tika_data.zip" folder to colan
+	First upload the "tika_data.zip" folder to colab
 	We use quantization to reduce memory requirements, then load in the embeddings model
 	The source code is analysed using this model, and the script runs to create the different required matrices
 	Once the script has finished running, the created cluster files will be downloaded to your system.
@@ -63,3 +63,12 @@ Step 2 - Calculating metrics to compare the semantic and structural clustering m
 
 
 Week 4 - LLM based architecture tasks
+
+Step 1 - Running LLM based architectural summary 
+	Use the google collab sheet - https://colab.research.google.com/drive/1LfqAIo0jm3KDlumgZ0JRDtkSr6jJQP8Y?usp=sharing
+	First upload the tika-core.zip folder from the apache tika repository to colab 
+	Also upload the arc cluster file which you want to analyse
+	Make sure the source files and rsf path variable match according to the files you have uploaded
+	Start the script
+	Once the script has finished running, the generated LLM summaries will be downloaded to your system
+	Unzip the "week4_summary_***.zip" folder and analyze the results
