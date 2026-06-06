@@ -3,7 +3,7 @@ import os
 import csv
 
 arcade_tools = "arcade_tools"
-acdc_rsf = "acdc/tika_detect_parser_acdc.rsf"
+acdc_rsf = "output_acdc/acdc/tika_detect_parser_acdc.rsf"
 
 # Set up the CSV file for clean, tabular data
 csv_filename = "metrics_summary.csv"
@@ -16,8 +16,8 @@ with open(csv_filename, "w", newline='') as csvfile:
 
     # Loop through k=2 to 50 (k=1 is skipped as it is just one giant cluster)
     for k in range(2, 51):
-        wca_rsf = f"output_wca_{k}/tikadp-v1_UEMNM_{k}_clusters.rsf"
-        limbo_rsf = f"output_limbo_{k}/tikadp-v1_IL_{k}_clusters.rsf"
+        wca_rsf = f"output_wca/wca_{k}/tikadp-v1_UEMNM_{k}_clusters.rsf"
+        limbo_rsf = f"output_limbo/limbo_{k}/tikadp-v1_IL_{k}_clusters.rsf"
 
         # Define the 3 comparisons we want to make for every K-value
         comparisons = [

@@ -5,24 +5,26 @@ import csv
 results = []
 
 # Dynamically find all WCA and Limbo output folders
-for folder in sorted(glob.glob("output_*_*")):
+for folder in sorted(glob.glob("output_*/*_*")):
+    if folder.startswith("output_arc/") or folder.startswith(f"output_arc{os.sep}"):
+        continue
     if os.path.isdir(folder):
-        parts = folder.split('_')
-        if len(parts) >= 3:
-            algo = parts[1].upper()  # Extracts "WCA" or "LIMBO"
-            k_val = parts[2]         # Extracts the threshold value
+        folder_name = os.path.basename(folder)
+        parts = folder_name.split('_')
+        if len(parts) >= 2:
+            algo = parts[0].upper()  # Extracts "WCA" or "LIMBO"
+            k_val = parts[1]         # Extracts the threshold value
             
             label = f"{algo}_k={k_val}"
             pattern = f"{folder}/*.rsf"
             results.append((label, algo, k_val, pattern))
 
-# Add ACDC explicitly
-if os.path.exists("acdc"):
-    results.append(("ACDC", "ACDC", "N/A", "acdc/*.rsf"))
+acdc_dir = "output_acdc/acdc"
+if os.path.exists(acdc_dir):
+    results.append(("ACDC", "ACDC", "N/A", f"{acdc_dir}/*.rsf"))
 
 # --- SETUP DIRECTORIES & CSV ---
-os.makedirs("cluster_results", exist_ok=True)
-
+os.makedirs("cluster_details", exist_ok=True)
 # Open a CSV file for writing the summary stats
 with open('clustering_summary.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
@@ -78,4 +80,4 @@ with open('clustering_summary.csv', 'w', newline='') as csvfile:
                         detail_file.write(f"  - {c}\n")
                     detail_file.write("\n")
 
-print("Stored high level information for each clustering result in .csv and in-depth information in cluster_results folder")
+print("Stored high level information for each clustering result in .csv and in-depth information in cluster_details folder")

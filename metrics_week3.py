@@ -5,7 +5,7 @@ from pathlib import Path
 
 # Paths to your tools and static ACDC file
 arcade_tools = Path("arcade_tools")
-acdc_rsf = Path("acdc/tika_detect_parser_acdc.rsf")
+acdc_rsf = Path("output_acdc/acdc/tika_detect_parser_acdc.rsf")
 
 # Set up the CSV file with the new 'Alpha' column
 csv_filename = "metrics_week3_summary.csv"
@@ -53,8 +53,8 @@ if __name__ == "__main__":
         writer.writerow(["Algorithm 1", "Algorithm 2", "Alpha", "K-Value", "A2A Score", "CVG (1 -> 2)", "CVG (2 -> 1)"])
 
         for k in range(2, 51):
-            wca_rsf = Path(f"output_wca_{k}/tikadp-v1_UEMNM_{k}_clusters.rsf")
-            limbo_rsf = Path(f"output_limbo_{k}/tikadp-v1_IL_{k}_clusters.rsf")
+            wca_rsf = Path(f"output_wca/wca_{k}/tikadp-v1_UEMNM_{k}_clusters.rsf")
+            limbo_rsf = Path(f"output_limbo/limbo_{k}/tikadp-v1_IL_{k}_clusters.rsf")
             
             # 1. Baseline Comparisons (No Alpha)
             baselines = [

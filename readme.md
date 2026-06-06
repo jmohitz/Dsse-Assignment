@@ -20,19 +20,20 @@ Step 4 - Filter the .rsf file to find dependencies for detect and parser
 	
 Step 5 - Use the arcade Clusturer and arcade ACDC to run WCA and Limbo clustering algorithms
 
-	Run the clustering.py file which has configurations for WCA using UEMNM for k=4,9,15 and for Limbo using IL for k=4,9,15 and for ACDC
-	This creates the output folders - ouput_wca_4, output_wca_9, output_wca_15, output_limbo_4, output_limbo_9, output_limbo_15, acdc
+	Run the clustering.py file will run the 3 clustering algorithms (WCA, Limbo, ACDC) with WCA and Limbo running for number of clusters from 2 to 50
+	The results are stores in the directories - output_wca/, output_limbo/, output_acdc/
 
 Step 6 - Analyze the clusters created by each algorithm and find the results
 		
-	Run the analyze_cluster.py file and parse the results stored in cluster_results.txt
+	Run the analyze_cluster.py file and parse the results stored in cluster_details/
+	The clustering_summary.csv files contains results for all the clusters generated
 
 Week 2
 
 Step 1 - Run the arcade tools a2a and cvg to calculate the relevant metrics (similarity and distance)
 	
-	Run the metrics.py file which calculates the a2a and cvg scores betweeen WCA(k=4,9,15) and Limbo(k=4,9,15), between WCA(k=4) and ACDC, between Limbo(k=4) and ACDC
-	The results are then stored in metrics_results.txt
+	Run the metrics.py file which calculates the a2a and cvg scores betweeen all the three algorithms
+	The results are then stored in metrics_summary.csv
 
 Step 2 - LLM Prompting (lightweight model)
 

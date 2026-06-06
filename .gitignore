@@ -2,8 +2,14 @@
 arcade_tika/
 arcade_tools/
 output_*/
-cluster_results/
-acdc/
+cluster_details/
 .DS_Stores
 .embedding_cache/
-output_arc.zip
+*.zip
+*.jar
+*.fv
+*.rsf
+*.rsf
+*.txt
+*.csv
+week4_*/
