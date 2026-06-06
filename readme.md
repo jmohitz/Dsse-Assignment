@@ -41,10 +41,6 @@ Step 2 - LLM Prompting (lightweight model)
 	To load in the LLM model, perform quantization to reduce the model size and precision, the tokenizer configuration is set up for communicating with the LLM.
 	We can finetune the prompt as well as the hyperparameters for the model (temp, top_p, max_tokens and do_sample) to determine what works best
 
-Step 3 - LLM Prompting (heavyweight model)
-
-	
-
 Week 3
 
 Step 1 - Running semantic clustering
