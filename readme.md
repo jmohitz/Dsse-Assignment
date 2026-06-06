@@ -66,6 +66,7 @@ Step 2 - Calculating metrics to compare the semantic and structural clustering m
 Week 4 - LLM based architecture tasks
 
 Step 1 - Running LLM based architectural summary 
+	
 	Use the google collab sheet - https://colab.research.google.com/drive/1LfqAIo0jm3KDlumgZ0JRDtkSr6jJQP8Y?usp=sharing
 	First upload the tika-core.zip folder from the apache tika repository to colab 
 	Also upload the arc cluster file which you want to analyse
